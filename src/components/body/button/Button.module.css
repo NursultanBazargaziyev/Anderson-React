@@ -1,12 +1,5 @@
-.main{
-    width: 100%;
-    height: 150px;
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-}
 
-.footer_buttons{
+.buttons{
     background-color: #4CAF50;
     color: #fff;
     padding: 20px;  
@@ -16,6 +9,6 @@
 }
 
 
-.footer_buttons:hover{
+.buttons:hover{
     background-color:#555555
 }

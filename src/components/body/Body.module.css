@@ -1,13 +1,15 @@
 .Body{
     width:100%;
     border: 1px solid #000;
-    justify-content: center;
-    display:flex;
+    padding: 50px;
 }
 
 
 .body_inputs{
+    /* display: none; */
+
     width: 70%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,10 +26,54 @@
     justify-content: space-around;
 }
 
-textarea{
-    resize: none;
+.error_msg{
+    font-size: 12px;
+    color: #ff0000;
 }
 
-.input_style{
-    width: 500px;
+.main{
+    /* display: none; */
+    width: 100%;
+    height: 150px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.afterSubmit{
+    display: flex;
+    display: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.form{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.header_style{
+    margin-right: 20px;
+}
+
+.fullname{
+display: flex;
+align-items: center;
+margin-right: 20px;
+width: 45%;
+flex-wrap: wrap;
+}
+
+
+.additional{
+    width: 100%;
 }
