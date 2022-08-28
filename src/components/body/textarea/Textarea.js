@@ -1,24 +1,20 @@
-import { Component } from "react";
 import style from "./textarea.module.css";
 
-class Textarea extends Component {
-  render() {
-    return (
-      <div className={style.textarea}>
-        <label htmlFor={this.props.id}>
-          <h3>{this.props.text}</h3>
-        </label>
-        <textarea
-          className={style.input_style}
-          max-cols="30"
-          rows="7"
-          maxLength={470}
-          {...this.props}
-        />
-        <p className={style.counter}>{this.props.counter}/470</p>
-      </div>
-    );
-  }
-}
-
+const Textarea = (props) => {
+  const { value, error, ...textareaProps } = props;
+  return (
+    <label className={style.textarea} htmlFor={props.id}>
+      <h3>{props.text}</h3>
+      <textarea
+        className={style.input_style}
+        max-cols="30"
+        rows="7"
+        maxLength={470}
+        {...textareaProps}
+      />
+      <p className={style.counter}>{value.length}/470</p>
+      <p className={style.error_msg}>{error}</p>
+    </label>
+  );
+};
 export default Textarea;

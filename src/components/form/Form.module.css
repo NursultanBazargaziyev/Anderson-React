@@ -1,0 +1,31 @@
+
+
+.innactive{
+    display: none;
+}
+
+
+.header_style{
+    margin-right: 20px;
+}
+
+
+
+.form{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.fullname{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    width: 45%;
+    flex-wrap: wrap;
+    }
+    
+
+.additional{
+    width: 100%;
+}
